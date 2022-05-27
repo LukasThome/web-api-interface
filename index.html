@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
   <head>
     <meta charset="utf-8" />
@@ -10,39 +6,51 @@
     <title>Local Web API</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
   </head>
-  <body>
-    <div>
-      <form action="">
-        <label for="playerIp">Type the player Local IP here</label>
-        <input
-          type="text"
-          id="playerIp"
-          name="playerIp"
-          value=""
-          placeholder="10.0.34.162"
-        />
-        <label for="playerPort">Type the player Local Web API port here</label>
-        <input
-          type="text"
-          id="playerPort"
-          name="playerPort"
-          value=""
-          placeholder="5544"
-        />
-      </form>
 
-      <button id="button 1" onclick="triggerCampaign()">Play Campaign 1</button>
-      <button id="button 2" onclick="stopCampaign()">
-        Stop Current Campaign
-      </button>
-      <form action="" onsubmit="return false">
-        <label for="temperature">Type temperature here</label>
-        <input type="number" id="temperature" name="temperature" value="" />
-        <button id="" onclick="changeTemperature()">Submit Temperature</button>
+  <body>
+    <div class="header">
+      <h2>Local Web API Manager</h2>
+    </div>
+    
+    <div class="container-configure">
+      <h2>Configure your player settings below</h2>
+      <form class="container-form">
+        <div class="container-playerIp">
+          <label for="playerIp" class="playerIp"
+            >Type the player Local IP here</label>
+          <input
+            type="text"
+            id="playerIp"
+            name="playerIp"
+            value=""
+            placeholder="10.0.34.162"/>
+        </div>
+        <div class="container-playerPort">
+          <label for="playerPort" class="playerPort"
+            >Type the player Local Web API port here</label>
+          <input
+            type="text"
+            id="playerPort"
+            name="playerPort"
+            value=""
+            placeholder="5544"
+          />
+        </div>
       </form>
     </div>
+
+    <!--- <button id="button 1" onclick="triggerCampaign()">Play Campaign 1</button>
+    <button id="button 2" onclick="stopCampaign()"> 
+     Stop Current Campaign
+    </button> -->
+    <!-- <form action="" onsubmit="return false">
+      <label for="temperature">Type temperature here</label>
+      <input type="number" id="temperature" name="temperature" value="" />
+      <button id="" onclick="changeTemperature()">Submit Temperature</button>
+    </form> -->
+
     <div>
       <p id="commandSent"></p>
     </div>
