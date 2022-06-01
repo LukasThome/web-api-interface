@@ -8,8 +8,7 @@
 .container-configure {
   background-color: #4682b4;
   text-align: center;
-  height: 150px;
-  margin: 20px;
+  height: 200px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -20,16 +19,45 @@
     flex-direction: row;
     justify-content: space-between;
     
+    
+    
 }
 .container-playerIp {
+  width: 400px;
+  height: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  color: #f1f1f1;
+  font-weight: bold;
 }
 .container-playerPort {
+  width: 400px;
+  height: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
+  font-weight: bold;
+  
+}
+
+#playerIp{
+  width: 100px;
+  height: 20px;
+  text-align: center;
+}
+#playerPort{
+  width: 100px;
+  height: 20px;
+  text-align: center;
+}
+
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
