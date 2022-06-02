@@ -36,14 +36,4 @@ function stopCampaign() {
     window.alert("Please input the player IP and Player Port");
   }
 }
-function changeTemperature() {
-  let temp = document.getElementById("temperature").value;
-  document.getElementById("commandSent").innerHTML =
-    "The command sent was: http://10.0.34.172:5544/attribute/Temperature/" +
-    temp;
-  return fetch("http://10.0.34.172:5544/attribute/Temperature/" + temp, {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(""),
-  });
-}
+

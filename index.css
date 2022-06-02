@@ -1,26 +1,27 @@
 .header {
-  background-color: #f1f1f1;
+  background-color: #9b9696;
   text-align: center;
-  padding: 20px;
   width: 100%;
+  padding: 18px;
+  border: solid;
 }
 
 .container-configure {
-  background-color: #4682b4;
+  background-color: #ff7700;
   text-align: center;
   height: 200px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+  width: 100%;
+  border: solid;
+  gap: 40px;
 }
 .container-form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .container-playerIp {
   width: 400px;
@@ -43,47 +44,76 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #f1f1f1;
   font-weight: bold;
-  
 }
 
-#playerIp{
+#playerIp {
   width: 100px;
   height: 20px;
   text-align: center;
 }
-#playerPort{
+#playerPort {
   width: 100px;
   height: 20px;
   text-align: center;
 }
 
-h2{
+h2 {
   font-family: Arial, Helvetica, sans-serif;
-  
+  color: white;
 }
-.trigger{
-  border-style: solid;
+.trigger {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  background-color: #0077b5;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: solid;
 }
 
-.actions{
-  border-style: solid;
+.actions {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  background-color: #0077b5;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: solid;
 }
-.triggers-actions{
+.triggers-actions {
   display: flex;
   flex-direction: row;
   height: 500px;
   width: 100%;
-  background-color: #c9c5c5;
-  
+  background-color: white;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+}
+.trigger-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.action-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#triggerField{
+  width: 300px;
+  height: 20px;
+  text-align: center;
+
+}
+#actionField{
+  width: 300px;
+  height: 20px;
+  text-align: center;
 
 }

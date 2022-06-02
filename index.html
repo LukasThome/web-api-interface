@@ -13,28 +13,31 @@
     <div class="header">
       <h2>Local Web API Manager</h2>
     </div>
-    
+
     <div class="container-configure">
       <h2>Configure your player settings below</h2>
       <form class="container-form">
         <div class="container-playerIp">
           <label for="playerIp" class="playerIp"
-            >Type the player Local IP</label>
+            >Type the player Local IP</label
+          >
           <input
             type="text"
             id="playerIp"
             name="playerIp"
             value=""
-            placeholder="e.g. 10.0.34.162"/>
+            placeholder="e.g. 10.0.34.162"
+          />
         </div>
         <div class="container-playerPort">
           <label for="playerPort" class="playerPort"
-            >Type the player Local Web API port</label>
+            >Type the player Local Web API port</label
+          >
           <input
             type="text"
             id="playerPort"
             name="playerPort"
-            value=""
+            value="5544"
             placeholder="e.g. 5544"
           />
         </div>
@@ -42,16 +45,45 @@
     </div>
 
     <div class="triggers-actions">
-      
       <div class="trigger">
-        <p> trigger example</p>
-      </div>
+        <h1>Trigger example</h1>
 
+        <div class="trigger-form">
+          <label for="trigger-form" class="trigger-form-label"
+            >Type your desired trigger command</label
+          >
+          <button id="button1" onclick="triggerCampaign()">
+            Play Campaign
+          </button>
+          <button id="button2" onclick="stopCampaign()">
+            Stop Current Campaign
+          </button>
+
+          <input
+            type="text"
+            id="triggerField"
+            name="triggerField"
+            value=""
+            placeholder="e.g. Stop Campaign"
+          />
+        </div>
+      </div>
 
       <div class="actions">
-        <p>actions example</p>
+        <h1>Actions example</h1>
+        <div class="action-form">
+          <label for="action-form" class="action-form-label"
+            >Type your desired action command</label
+          >
+          <input
+            type="text"
+            id="actionField"
+            name="actionField"
+            value=""
+            placeholder="e.g. Stop Campaign"
+          />
+        </div>
       </div>
-    
     </div>
     <!--- <button id="button 1" onclick="triggerCampaign()">Play Campaign 1</button>
     <button id="button 2" onclick="stopCampaign()"> 
