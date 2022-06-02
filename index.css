@@ -1,21 +1,22 @@
 .header {
-  background-color: #9b9696;
+  background-color: #2687be;
   text-align: center;
-  width: 100%;
-  padding: 18px;
+  width: 99.6%;
   border: solid;
+  text-shadow: 2px 2px black;
 }
 
 .container-configure {
-  background-color: #ff7700;
+  background-image: linear-gradient(#FF9438, #FFB70F);
   text-align: center;
   height: 200px;
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  border: solid;
   gap: 40px;
+  text-shadow: 2px 2px black;
+  margin-top: 10px;
 }
 .container-form {
   display: flex;
@@ -67,9 +68,8 @@ h2 {
   flex-direction: column;
   align-items: center;
   background-color: #0077b5;
-  margin-right: 20px;
-  margin-top: 20px;
-  border: solid;
+  margin-right: 5px;
+  margin-top: 10px;
 }
 
 .actions {
@@ -78,9 +78,8 @@ h2 {
   flex-direction: column;
   align-items: center;
   background-color: #0077b5;
-  margin-left: 20px;
-  margin-top: 20px;
-  border: solid;
+  margin-left: 5px;
+  margin-top: 10px;
 }
 .triggers-actions {
   display: flex;
@@ -89,8 +88,6 @@ h2 {
   width: 100%;
   background-color: white;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
   font-weight: bold;
 }
 .trigger-form {
@@ -105,15 +102,31 @@ h2 {
   align-items: center;
   gap: 10px;
 }
-#triggerField{
+#triggerField {
   width: 300px;
   height: 20px;
   text-align: center;
-
 }
-#actionField{
+#actionField {
   width: 300px;
   height: 20px;
   text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+label{
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 2px 2px black;
+  
 
 }

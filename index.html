@@ -18,9 +18,7 @@
       <h2>Configure your player settings below</h2>
       <form class="container-form">
         <div class="container-playerIp">
-          <label for="playerIp" class="playerIp"
-            >Type the player Local IP</label
-          >
+          <label for="playerIp" class="playerIp">Player IP</label>
           <input
             type="text"
             id="playerIp"
@@ -30,9 +28,7 @@
           />
         </div>
         <div class="container-playerPort">
-          <label for="playerPort" class="playerPort"
-            >Type the player Local Web API port</label
-          >
+          <label for="playerPort" class="playerPort">Player Port</label>
           <input
             type="text"
             id="playerPort"
@@ -46,23 +42,26 @@
 
     <div class="triggers-actions">
       <div class="trigger">
-        <h1>Trigger example</h1>
+        <h1>Create a campaign trigger</h1>
 
         <div class="trigger-form">
           <label for="trigger-form" class="trigger-form-label"
-            >Type your desired trigger command</label
+            >Trigger command</label
           >
-          <button id="button1" onclick="triggerCampaign()">
-            Play Campaign
-          </button>
-          <button id="button2" onclick="stopCampaign()">
-            Stop Current Campaign
-          </button>
-
           <input
             type="text"
-            id="triggerField"
+            id="triggerCommand"
             name="triggerField"
+            value=""
+            placeholder="e.g. Stop Campaign"
+          />
+          <label for="trigger-form" class="trigger-form-label"
+            >Pattern Action</label
+          >
+          <input
+            type="text"
+            id="patternAction"
+            name="patternField"
             value=""
             placeholder="e.g. Stop Campaign"
           />
@@ -70,19 +69,8 @@
       </div>
 
       <div class="actions">
-        <h1>Actions example</h1>
-        <div class="action-form">
-          <label for="action-form" class="action-form-label"
-            >Type your desired action command</label
-          >
-          <input
-            type="text"
-            id="actionField"
-            name="actionField"
-            value=""
-            placeholder="e.g. Stop Campaign"
-          />
-        </div>
+        <h1>Your Triggers</h1>
+        
       </div>
     </div>
     <!--- <button id="button 1" onclick="triggerCampaign()">Play Campaign 1</button>
