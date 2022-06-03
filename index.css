@@ -7,7 +7,7 @@
 }
 
 .container-configure {
-  background-image: linear-gradient(#FF9438, #FFB70F);
+  background-image: linear-gradient(#ff9438, #ffb70f);
   text-align: center;
   height: 200px;
   display: flex;
@@ -72,7 +72,7 @@ h2 {
   margin-top: 10px;
 }
 
-.actions {
+#actions {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -80,6 +80,8 @@ h2 {
   background-color: #0077b5;
   margin-left: 5px;
   margin-top: 10px;
+  gap: 10px;
+
 }
 .triggers-actions {
   display: flex;
@@ -123,10 +125,8 @@ h1 {
   text-align: center;
   text-shadow: 2px 2px black;
 }
-label{
+label {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
   text-shadow: 2px 2px black;
-  
-
 }
