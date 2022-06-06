@@ -6,7 +6,6 @@ let playerPort = document.getElementById("playerPort").value;
 let div = document.getElementById('actions');
 
 function create_another_button(elm) {
-  let lastBtnCounter = 
   let counter = parseInt(elm.getAttribute('data-counter'));
   let button = document.createElement('button');
   button.innerText = elm.id + '_' + counter;
