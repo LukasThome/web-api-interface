@@ -48,14 +48,17 @@
           <label for="trigger-form" class="trigger-form-label"
             >Trigger command</label
           >
-          <input
-            type="text"
-            id="triggerCommand"
-            name="triggerField"
-            value=""
-            placeholder="e.g. Stop Campaign"
-          />
-          <button id="btn_rv" onclick="create_another_buttonTrigger(this)">
+          <select name="Triggers" id="triggersSelect">
+            
+            <option value="stopCampaign()">Skip Campaign</option>
+            <option value="">Skip Campaign</option>
+            <option value="">Skip Campaign</option>
+            <option value="">Skip Campaign</option>
+            <option value="">Skip Campaign</option>
+            <option value="">Skip Campaign</option>
+
+          </select>
+          <button id="btn_triggerCommand" onclick="create_another_buttonTrigger(this)">
             Add 
           </button>
           <label for="trigger-form" class="trigger-form-label"
@@ -68,7 +71,7 @@
             value=""
             placeholder="e.g. Stop Campaign"
           />
-          <button id="btn_rv" onclick="create_another_buttonAction(this)">
+          <button id="btn_patternAction" onclick="create_another_buttonAction(this)">
             Add
           </button>
         </div>

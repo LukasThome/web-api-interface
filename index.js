@@ -1,22 +1,20 @@
 let playerIp = document.getElementById("playerIp").value;
 let playerPort = document.getElementById("playerPort").value;
 let div = document.getElementById('actions');
-let counter = 0;
+
+let select = document.getElementById('triggersSelect');
+let option = select.options[select.selectedIndex];
 // ============= tryng to add button in a div with JS command //
 
 
-function create_another_buttonTrigger(elm) {
-  let counter = parseInt(elm.getAttribute('data-counter'));
+
+
+function create_another_buttonTrigger() {
   let button = document.createElement('button');
-  button.innerText = elm.id + '_' + counter;
-  button.id = elm.id + '_' + counter;
-  button.setAttribute('data-counter', counter);
-  button.setAttribute('onclick', 'document.getElementById("triggerCommand")');
+  //slet option = document.getElementById('Triggers');
+  //button.setAttribute('onclick', option);
+  button.innerText = option.value;
   div.appendChild(button);
-  counter++;
-  //button.setAttribute('data-counter', counter);
-  console.log(counter);
-  
 }
 
 function triggerCampaign(id) {
@@ -40,7 +38,7 @@ function triggerCampaign(id) {
 }
 
 
-
+// campaing ready to use
 function stopCampaign() {
   let playerIp = document.getElementById("playerIp").value;
   let playerPort = document.getElementById("playerPort").value;
@@ -60,7 +58,7 @@ function stopCampaign() {
 }
 
 
-function create_another_buttonAction(elm) {
+function create_another_buttonAction() {
   let button = document.createElement('button');
   let patternField = document.getElementById("patternAction").value;
   button.innerText = patternField;
