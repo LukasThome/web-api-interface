@@ -1,27 +1,28 @@
 let playerIp = document.getElementById("playerIp").value;
 let playerPort = document.getElementById("playerPort").value;
-
-
-// ============= tryng to add button in a div with JS command //
 let div = document.getElementById('actions');
+let counter = 0;
+// ============= tryng to add button in a div with JS command //
 
-function create_another_button(elm) {
+
+function create_another_buttonTrigger(elm) {
   let counter = parseInt(elm.getAttribute('data-counter'));
   let button = document.createElement('button');
   button.innerText = elm.id + '_' + counter;
   button.id = elm.id + '_' + counter;
-  button.setAttribute('data-counter', '1');
+  button.setAttribute('data-counter', counter);
   button.setAttribute('onclick', 'document.getElementById("triggerCommand")');
   div.appendChild(button);
-  button.setAttribute('data-counter', counter);
+  counter++;
+  //button.setAttribute('data-counter', counter);
   console.log(counter);
   
 }
 
-function triggerCampaign() {
+function triggerCampaign(id) {
   let playerIp = document.getElementById("playerIp").value;
   let playerPort = document.getElementById("playerPort").value;
-  let pattern = document.getElementById("pattern").value;
+  let pattern = id;
   if (playerIp && playerPort) {
     let url =
       "http://" + playerIp + ":" + playerPort + "/trigger/" + pattern;
@@ -37,6 +38,9 @@ function triggerCampaign() {
 }
 
 }
+
+
+
 function stopCampaign() {
   let playerIp = document.getElementById("playerIp").value;
   let playerPort = document.getElementById("playerPort").value;
@@ -56,6 +60,15 @@ function stopCampaign() {
 }
 
 
-
+function create_another_buttonAction(elm) {
+  let button = document.createElement('button');
+  let patternField = document.getElementById("patternAction").value;
+  button.innerText = patternField;
+  document.getElementById('patternAction').value = '';
+  button.setAttribute('id', patternField);
+  button.setAttribute('onclick', 'triggerCampaign(this.id)');
+  div.appendChild(button);
+  
+}
 
 
