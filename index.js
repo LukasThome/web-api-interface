@@ -11,9 +11,9 @@ let option = select.options[select.selectedIndex];
 
 function create_another_buttonTrigger() {
   let button = document.createElement('button');
-  //slet option = document.getElementById('Triggers');
-  //button.setAttribute('onclick', option);
+  button.setAttribute('onclick', option.value);
   button.innerText = option.value;
+  console.log(option.value);
   div.appendChild(button);
 }
 
